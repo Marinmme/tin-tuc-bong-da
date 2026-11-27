@@ -23,7 +23,7 @@ Chủ dự án tự dùng, đọc tin để tham khảo làm nội dung YouTube.
 
 ## Cách làm việc
 - **Chỉ chạy khi chủ dự án yêu cầu** (gõ `/tin-bong-da`). Claude không tự mở phiên, không hẹn giờ.
-- Quy trình: skill `.claude/skills/tin-bong-da/SKILL.md` → script `outils/xuat_excel.py` → file trong `livrables/` → đẩy lên GitHub.
+- Quy trình: skill `.claude/skills/tin-bong-da/SKILL.md` → script `outils/xuat_excel.py` → file trong `livrables/` → đẩy lên GitHub → `outils/gui_telegram.py` gửi Telegram.
 
 ## Quy tắc nội dung
 - Chỉ đưa tin đã xác thực là tin thật. Tin đồn phải ghi rõ **[TIN ĐỒN]** + nguồn.

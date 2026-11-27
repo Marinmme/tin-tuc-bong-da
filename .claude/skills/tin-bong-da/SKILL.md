@@ -59,4 +59,12 @@ git commit -m "Tin bóng đá YYYY-MM-DD"
 git push
 ```
 
-Báo lại cho chủ dự án: số tin, số tin đồn, 3 tin nóng nhất, đường dẫn file.
+## Bước 6 — Gửi vào Telegram
+
+```bash
+python3 outils/gui_telegram.py livrables/YYYY-MM-DD_tin-bong-da.xlsx
+```
+
+Nếu lỗi thiếu `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` hoặc mạng chặn `api.telegram.org`: báo chủ dự án, không bỏ qua im lặng. File vẫn đã có trên GitHub.
+
+Báo lại cho chủ dự án: số tin, số tin đồn, 3 tin nóng nhất, đường dẫn file, đã gửi Telegram chưa.

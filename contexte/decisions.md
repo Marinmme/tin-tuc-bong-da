@@ -4,6 +4,16 @@ Mỗi quyết định: ngày, nội dung, lý do. Mới nhất ở trên cùng.
 
 ---
 
+## 2026-11-27 — Gửi file qua Telegram
+
+**Quyết định:** sau khi đẩy GitHub, gửi file Excel vào Telegram bằng bot riêng (miễn phí, giới hạn 50 MB/file).
+- Token bot: biến môi trường `TELEGRAM_BOT_TOKEN`, chủ dự án tự nhập trong cài đặt môi trường. Không dán vào chat, không ghi vào repo.
+- Người nhận: biến `TELEGRAM_CHAT_ID`.
+- Môi trường cloud riêng `tin-tuc-bong-da` mở thêm host `api.telegram.org`.
+**Lý do:** chủ dự án muốn nhận file trên Telegram. Telegram đặt token trong URL, nên không dùng được "network secret" (chỉ chèn header).
+
+---
+
 ## 2026-11-27 — Cách chạy tool
 
 **Quyết định:**
